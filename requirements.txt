@@ -1,0 +1,13 @@
+# 依赖只有一层：图形界面（PySide6）。
+# I2C / PWM 驱动与命令行参数解析都只用 Python 标准库（PWM 直写 sysfs），
+# 所以即使没装 PySide6，`python -m src.main --help` 也能正常跑。
+PySide6==6.9.1
+
+# 板上安装（Debian / ARM，建议用国内镜像）：
+#     python3 -m venv .venv
+#     .venv/bin/python -m pip install -r requirements.txt \
+#         -i https://mirrors.aliyun.com/pypi/simple/ \
+#         --trusted-host mirrors.aliyun.com
+#
+# 无网络时可直接复用板上已有虚拟环境（软链），省下 ~257MB 的重复下载：
+#     ln -s ~/projects/demo-ultrasonic-sensing/.venv .venv

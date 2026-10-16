@@ -1,0 +1,25 @@
+# python
+__pycache__/
+*.pyc
+
+# virtual env
+.venv/
+
+# vscode
+.vscode/
+
+# build
+build/
+dist/
+
+# log
+logs/
+
+# qt
+*.qmlc
+
+# windows
+Thumbs.db
+
+# 说明：本工程只含超声波距离感知应用程序本体；
+

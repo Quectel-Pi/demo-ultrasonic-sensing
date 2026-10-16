@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=Ultrasonic Distance Measurement Console
+Comment=Ultrasonic ranging + 180 degree servo scan with left/center/right result
+# Exec 显式走 python3 解释器：不依赖 run_scan.py 的执行位（git 拉下来在 Windows/ZIP 场景可能丢失）
+Exec=/usr/bin/env python3 /home/welton/projects/demo-ultrasonic-sensing/run_scan.py
+Path=/home/welton/projects/demo-ultrasonic-sensing
+Terminal=false
+X-GNOME-Autostart-enabled=true
