@@ -1,0 +1,9 @@
+# 板上为 Linux，脚本/源码必须保持 LF；Windows 端不做自动转换
+* text=auto eol=lf
+
+# 二进制/资源文件不做转换
+*.svg binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.mp4 binary
